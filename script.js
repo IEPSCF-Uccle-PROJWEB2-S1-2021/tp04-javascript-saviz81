@@ -24,6 +24,7 @@ let x=function reduce(numbers,fn){
     }
     else{
       let result=fn(numbers[0],numbers[1]);
+      if(numbers.length>2);
       for(let i=2; i<numbers.length; i++){
          result=fn(numbers[i],result);
     }
@@ -47,8 +48,6 @@ console.log(x(myTestNumbers,minimum));
 console.log(x(myTestNumbers,maximum));
 ;
 console.log(y(myTestNumbers,a => { if(a>=30){return true;}}));
-
-
 
 
 
